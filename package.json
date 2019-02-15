@@ -1,0 +1,29 @@
+{
+  "name": "dxlibs-waitfs",
+  "version": "0.1.0",
+  "description": "Espera por la existencia o eliminación de un archivo",
+  "author": "Dx Team <team@daax.com.ar>",
+  "scripts": {
+    "eslint": "eslint src/**.js",
+    "test": "jest ./test/**/*.test.js --collectCoverageFrom=./src/**/*.js --coverage --passWithNoTests",
+    "test-watch": "jest ./test/**/*.test.js --collectCoverageFrom=./src/**/*.js --coverage --passWithNoTests --watchPathIgnorePatterns=.*\\.sonar.* --watchAll ",
+    "sonar": "sonar-scanner -Dsonar.projectKey=dxlibs-waitfs -Dsonar.sourceEncoding=UTF-8 -Dsonar.host.url=http://sonnarqube.lanacion.com.ar:9000 -Dsonar.sources=./src -Dsonar.language=js -Dsonar.exclusions=**.test.js -Dsonar.tests=./test -Dsonar.test.inclusions=./test/**.test.js"
+  },
+  "main": "src/index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^24.0.0",
+    "sinon": "^7.2.3"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dx-team/waitfs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dx-team/waitfs/issues"
+  },
+  "homepage": "https://github.com/dx-team/waitfs#readme"
+}
